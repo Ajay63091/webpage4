@@ -11,7 +11,7 @@ a{
 /* Header Start */
 Header{
     width: 100%;
-    height: 60px;
+    height: auto;
     color: #fff;
     background-color: #131e3A;
     display: flex;
@@ -45,21 +45,25 @@ header ul li a.active{
     position: absolute;
     top: 100px;
     font-weight: normal;
+    color: #fff;
 }
 .banner h2{
     font-size: 30px;
    position: absolute;
    top: 220px;
+   color: #fff;
 }
 .banner form{
-    width: 85%;
-    height: 105px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    bottom: 15px;
-    background: #5c327A;
-}
+    
+        width: 81%;
+        min-height: 100px;
+       position: absolute;
+       display: flex;
+       align-items: center;
+       bottom: 15px;
+       background: #5c327a;
+    }
+
  .switchbutton{
     position: absolute;
     top:5px;
@@ -79,12 +83,16 @@ header ul li a.active{
 .banner form label{
     display: none;
 }
-.banner form,.searchform{
+.banner form .searchform{
     margin-top: 5px;
+}
+.searchform #city{ 
+   color: #00ffff;
+    margin-right: 5px;
 }
 .banner form .searchform input,
 .banner form .searchform select{
-    width: 200px;
+    width: 150px;
     height: 35px;
     margin-right: 5px;
 }
@@ -92,6 +100,7 @@ header ul li a.active{
     width: 90px;
     height: 60px;
     border-radius: 50%;
+    margin-left: 8%;
 }
 .banner form .info{
     position: absolute;
@@ -99,6 +108,8 @@ header ul li a.active{
 }
 form .info {
     color: #fff;
+    margin-top: 5px;
+    
 }
 
 .banner form .info select{
@@ -107,6 +118,7 @@ form .info {
     color: #fff;
      background: none;
     border: none; 
+    margin-left: 0;
 }  
 /* Banner section End */
 /* Fun section start */
@@ -139,9 +151,9 @@ form .info {
 /* News section start */
 .newslatter{
     width: 100%;
-    height: 250px;
+    height: 280px;
     padding: 0px 125px;
-    background: linear-gradient(rgba(120, 110, 121, 0.27),rgba(91,4,99,0.8)), url(../img/image2.jpg)no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(../img/bane.jpg)no-repeat;
     background-size: 100% 100%;
     align-items: center;
 }
@@ -149,16 +161,17 @@ form .info {
     display: none;
 }
 .newslatter .latter{
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
-    padding-left: 55%;
-    padding-top:80px;
+    padding-left: 36%;
+    padding-top:  119px;
+    margin-bottom: 15px;
     color: #fff;  
 }
 .newslatter .j{
     width: 360px;
     height: 35px;
-    margin-left: 680px;
+    margin-left: 450px;
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -168,12 +181,14 @@ form .info {
 width: 80px;
 height: 35px;
 padding: 5px 10px;
+margin-left: 10px;
 }
  .new{
-    font-size: 18px;
+    font-size: 15px;
    color: #fff;
-   padding-left: 650px;
-   margin-bottom: 15px;  
+   padding-left: 30%;
+   margin-bottom: 15px;
+  
 }
     
 /* News section End */
@@ -234,8 +249,8 @@ div.content span{
     display: none;
 }
 .estimate img{
-    width: 200x;
-    height: 250px;
+    width: 200px;
+    height:auto;
     position: absolute;
     top: 0px;
     right: 0px; 
@@ -309,13 +324,19 @@ footer h3{
     margin-bottom: 10px;
     margin-top: 20px;
 }
-footer  .topfot li li{
+footer  .topfot ul li{
     list-style: none;
 }
 footer ul li a{
     color:#918e97;
     list-style: none;
     
+}
+.coumtry ul li a{
+    /* margin-bottom: 15px; */
+}
+.city ul li a{
+    /* margin-bottom: 15px; */
 }
 footer ul li a span{
     color: #fff;
@@ -324,7 +345,7 @@ footer ul li a span{
 footer .international {
     width:40%;
     display:grid;
-    grid-gap:20px;
+    grid-gap: 4px;
     grid:
     'h3 h3'
     'inter1 inter2';
@@ -337,10 +358,15 @@ footer .international h3{
 
 footer .international .inter1 {
     grid-area:inter1;
+    padding-bottom: 8%;
+    
+  
 }
 
 footer .international .inter2 {
     grid-area:inter2;
+  padding-bottom: 8%;
+   
 }
 footer,.bottomfotter{
     padding-top: 40px;
@@ -363,7 +389,7 @@ footer,.bottomfotter{
 }
 .bottomfotter .footmenu ul a{
     color: #ffff;
-    font-size: 15px;
+    /* font-size: 10px; */
 }
 .bottomfotter, .footmenu ul li a:hover{
     color: #ff0000;
@@ -373,6 +399,7 @@ footer,.bottomfotter{
     font-size: 15px;
     padding-left:0px;
     color: #a29ba3;
+    margin-bottom: 12px;
 }
 .bottomfotter, .social{
     display: flex;
@@ -383,20 +410,342 @@ footer,.bottomfotter{
     font-size: 23px;
    
 }
+/* Footer section End */
+/* media quary section start */
+  @media screen and (max-width:  1200px){
+   .banner h1{
+    font-size: 40px;
+   }
+   .banner form .searchform input{
+    width: 130px;
+   }
+   .newslatter .j{
+    margin-left: 280px;
+   }
+   
+    .newslatter .latter{
+        font-size: 27px;
+    }
+    .new{
+        font-size: 14px;
+        padding-left: 36%;
+    }
+    .blog-content h3{
+        font-size: 14px;
+    }
+    .blog-content p{
+        font-size: 13px;
+    }
+    footer h3{
+        font-size: 18px;  
+    }
+    .topfot ul li{
+        font-size: 13px;
+    }
+    .footmenu ul li a{
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .footmenu p{
+        padding-bottom: 10px;
+    }
+  } 
 
-
-
-
-
-
+  @media screen and (max-width:  992px){
+  header{
+    padding:0px 25px;
+  }
+  .banner form .searchform input{
+    width: 100px;
+  }
+  .banner form .info select{
+    width: 50px;
+  }
+  .fun{
+    padding: 50px 70px;
+  }
+  form .info{
+    margin-top: 38px;
+  }
+  .banner form{
+    min-height: 130px;
+  }
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 20px;
+        top: 181;
+    }
+    .searchform #city{
+        display: none;
+    }
+    .newslatter .latter{
+        padding-top: 58px;
+    }
+    .newslatter .j{
+        width: 250px;
+        margin-left: 174px;
+    }
+    .fun{
+        padding: 50px 70px;
+    }
+    .fun #icon{
+        font-size: 20px;
+    }
+    .fun ul li{
+        width: 130px;
+        height: 125px;
+    }
+    .destination{
+        padding: 50px 100px;
+    }
+    .destination ul{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 400px 400px;
+    }
+    .estimate{
+        padding: 52px ;
+    }
+    .estimate input{
+        padding: 5px;
+    }
+    footer{
+        padding: 0px 62px;
+    }
+  }
+  @media screen and (max-width:  768px){
+    header{
+        padding: 0px 5px;
+    }
+    .banner{
+       padding:0px 15px;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .banner h2{
+        font-size: 17px;
+    }
+    .banner form{
+        width: 100%
+        padding:0px 20px;
+    }
+    .banner form .searchform input{
+        width: 90px;
+  }
+  .banner form .info{
+    font-size: 12px;
+  }
+  .fun h2{
+    margin-top: 15px;
+  }
  
 
 
+  .fun ul li{
+    width: 170px;
+    height: 100px;
+    padding: 0px 2px;
+  }
+  .fun #icon{
+    font-size: 14px;
+  }
+  .newslatter .latter{
+    font-size: 18;
+    padding-top: 7px;
+  }
+  .new{
+    font-size: 10px;
+  }
+  .newslatter .j{
+    width: 250px;
+    margin-left: 82px;
+  }
+  .newslatter .b{
+    width: 100px;
+    padding: 5px;
+    margin-left: 58%;
+    margin-top: 2%;
+  }
+  .destination ul{
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 400px 400px;
+  }
+  .estimate {
+    padding: 50px 10px;
+  }
+  .estimate h2{
+    margin-left: 12px;
+  }
+  .estimate h3{
+    margin-left: 12px;
+  }
+  .estimate input ,.estimate select{
+    padding: 4px;
+    width: 110px;
+  }
+  .estimate img{
+    padding: 4px;
+    width: 150px;
+    height: auto;
+  }
+  .blog{
+    padding: 50px 5px;
+  }
+  .topfot .city .coumtry{
+    padding: 10px 5px;
+  }
+  footer li a{
+    font-size: 12px;
+  }
+  footer{
+    padding: 0px 39px;
+  }
+  .social li {
+    margin: 7px;
+  }
+}
+@media screen and (max-width:  576px){
+header h2{
+    font-size: 35px;
+} 
+
+
+.banner form .snt{
+    /* height: 60px; */
+    /* width: 70px; */
+}
+.banner form .searchform select{
+    /* height:28px; */
+    /* width: 80px; */
+    /* font-size: 12px; */
+}
+.banner form .searchform input{
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+}
+.banner form .searchForm input,
+    .banner form .searchForm select{
+        /* display: block; */
+        width: 100%;
+        text-align: center;
+        
+    }
+  .banner form {
+    min-height: 200px;
+   
+  }
+  .banner form button{
+    width: 130px;
+    height: 25px;
+  }
+  .smt{
+    position: absolute;
+    top: 88%;
+    left: -9%;
+  }
+  
+.banner form .info{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 53; 
+    
+}
+.banner form button.smt {
+    height: 25px;
+    width: 100%;
+    border-radius: 0;
+    padding-right: 9%;
+}
+
+
+.banner .searchform select{
+    width: 60px;
+}
+.fun #icon{
+    font-size: 28px;
+  }
+  .fun span{
+    font-size: 12px;
+  }
+  .fun{
+    height: 450px;
+    /* padding: 50px 110px; */
+  }
+  .fun h2{
+    margin-bottom: 28px;
+  }
+  .fun ul {
+    display: grid;
+    grid-gap: -2px;
+    margin-left: 4%;
+    grid-template-rows: 110px 110px;
+    grid-template-columns: repeat(2,50%);
+  }
+  .newslatter .latter .new{
+    width: 100%;
+    height: 170px;
+    text-align: center;
+  }
+  .newslatter .j .b{
+    padding: 10px 80px;
+  }
+  .estimate h2,  .estimate h3,  .estimate hr{
+    text-align: center;
+  }
+  .estimate img{
+    display: none;
+  }
+  .estimate input, .estimate select{
+    padding: 6px;
+    width: 105px;
+    font-size: 10px;
+  }
+  .estimate hr{
+    display: none;
+  }
+  .blog h2 + p{
+    padding: 10px 120px;
+  }
+  .blog-content{
+    display: block;
+  }
+  .blog-content h3{
+    font-size: 18px;
+  }
+  .blog-content p{
+    font-size: 16px;
+  }
+  .blog-content img{
+    height: 145px;
+  }
+ footer .topfot{
+    display: block;
+ }
+ footer .international{
+    width: auto;
+ }
+ .bottomfooter {
+  flex-direction: column;
+ }
+ footer .footmenu ul li a{
+   
+    display: inline-block;
+   margin-left: 0;
+   padding-left: 3px;
+  
     
     
+ }
+}
 
 
 
-    
 
-/* Footer section End */
+/* media quary section end */
+
+
